@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:preview": "node scripts/dev-preview.mjs",
     "build": "next build",
     "start": "next start",
+    "preview": "npm run build && npx serve out -s -p 3002",
     "lint": "eslint"
   },
   "dependencies": {

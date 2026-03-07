@@ -1,0 +1,6 @@
+# 允许所有爬虫抓取整站；上线后若需限制可改
+User-agent: *
+Allow: /
+
+# 若有 sitemap 可取消下一行注释并填写实际地址
+# Sitemap: https://yourdomain.com/sitemap.xml
