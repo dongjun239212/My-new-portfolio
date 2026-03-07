@@ -50,9 +50,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${tiktokSans.variable} ${playfairDisplay.variable}`}>
-      <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" />
-      </head>
       <body className="antialiased">
         {children}
         {/* 覆盖 Next.js 注入的 nextjs-portal 定位，强制固定到视口左上角，避免 top: 11415px 等错误位置 */}

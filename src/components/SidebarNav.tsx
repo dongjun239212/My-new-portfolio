@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { SIDEBAR_NAV_LINK_ACTIVE, SIDEBAR_NAV_LINK_DEFAULT } from "@/lib/sidebarNavStyles";
+import { Icon } from "@/components/Icons";
 
 const LINKS = [
   { href: "#projects", label: "Projects", icon: "apps" },
@@ -71,12 +72,12 @@ export function SidebarNav({ basePath = "", activeSection = null }: SidebarNavPr
             href={fullHref}
             className={isActive ? SIDEBAR_NAV_LINK_ACTIVE : SIDEBAR_NAV_LINK_DEFAULT}
           >
-            <span
-              className={`material-symbols-outlined h-6 w-6 shrink-0 select-none text-[24px] ${isActive ? "text-red-600" : "text-black/65"} group-hover:text-red-600`}
+            <Icon
+              name={icon as "apps" | "psychology" | "person"}
+              size={24}
+              className={`h-6 w-6 ${isActive ? "text-red-600" : "text-black/65"} group-hover:text-red-600`}
               aria-hidden
-            >
-              {icon}
-            </span>
+            />
             {label}
           </a>
         );

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { CARD_BUTTON_LIGHT } from "@/lib/cardButtonStyles";
+import { Icon } from "@/components/Icons";
 
 const DEFAULT_TITLE = "Shop framework revamp";
 
@@ -58,13 +59,7 @@ export function DetailTitleSection() {
             className="flex shrink-0 items-center justify-center no-underline text-inherit hover:opacity-70 transition-opacity"
             aria-label="Back to homepage"
           >
-            <span
-              className="material-symbols-outlined h-8 w-8 text-center align-middle text-black"
-              style={{ fontSize: "32px" }}
-              aria-hidden
-            >
-              arrow_back
-            </span>
+            <Icon name="arrow_back" size={32} className="text-black" aria-hidden />
           </Link>
           <h1 className="min-w-0 text-[24px] font-bold leading-[1.2] text-black">
             {title}
@@ -83,12 +78,7 @@ export function DetailTitleSection() {
           className={`${CARD_BUTTON_LIGHT} mb-5 inline-flex items-center gap-2 no-underline text-black`}
           aria-label="Back to homepage"
         >
-          <span
-            className="material-symbols-outlined shrink-0 text-[20px]"
-            aria-hidden
-          >
-            arrow_back
-          </span>
+          <Icon name="arrow_back" size={20} className="shrink-0 text-black" aria-hidden />
           <span>Back to homepage</span>
         </Link>
         <h1 className="min-w-0 text-[48px] font-bold leading-[1.2] text-black">
