@@ -6,6 +6,7 @@
     "dev": "next dev",
     "dev:preview": "node scripts/dev-preview.mjs",
     "build": "next build",
+    "build:gitee": "GITEE_PAGES=true GITEE_REPO_NAME=my-portfolio next build",
     "start": "next start",
     "preview": "npm run build && node scripts/serve-out.mjs",
     "deploy:oss": "node scripts/upload-to-oss.mjs",
