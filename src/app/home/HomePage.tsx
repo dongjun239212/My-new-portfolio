@@ -1,9 +1,10 @@
 /**
  * 首页内容 - 基于 Figma 设计稿 (node-id=208-70011)
- * 图片通过 import 引入，使用原生 img 确保稳定显示
+ * Hero 图片走 basePath，兼容 GitHub Pages / Gitee / Vercel 等多环境。
  */
 
-const heroImg = { src: "/hero-watercolor.png" } as const;
+const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(/\/$/, "");
+const heroImg = { src: `${BASE_PATH}/hero-watercolor.png` } as const;
 import projectPlaceholder from "@/assets/placeholder-project.jpg";
 import thinkingPlaceholder from "@/assets/placeholder-thinking.jpg";
 import thinkingImg1 from "@/assets/thinking/thinking-7f12ea1300756f144a0fb5daaf68dbfc01103a46.png";
