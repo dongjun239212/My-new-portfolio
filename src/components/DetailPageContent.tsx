@@ -32,7 +32,7 @@ export function DetailMain({}: DetailPageContentProps) {
       <main className="min-w-0 flex-1 flex flex-col w-full">
         <section
           className="relative w-full shrink-0 overflow-hidden"
-          style={{ aspectRatio: "3 / 1" }}
+          style={{ aspectRatio: "4.5 / 1" }}
           aria-hidden
         >
           <DetailImage
